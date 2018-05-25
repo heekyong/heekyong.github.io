@@ -1,7 +1,7 @@
 ### your site title here
 
 title: Heekyong's Blog
-baseurl: heekyong.github.io # name of the repository
+baseurl: # name of the repository
 email: ggohee17@korea.ac.kr
 
 
@@ -38,4 +38,4 @@ exclude:
 - README.md
 
 
-gems: [jekyll-seo-tag, jekyll-paginate]
+plugins: [jekyll-seo-tag, jekyll-paginate]
