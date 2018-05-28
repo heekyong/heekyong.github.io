@@ -4,6 +4,6 @@ layout: post
 permalink: /contact/
 ---
 
-May be a contact form.
+[LinkedIn Profile](https://www.linkedin.com/in/heekyong-go-9b955813b/)
 
 Email: <a href="mailto:{{site.email}}">{{site.email}}</a>
