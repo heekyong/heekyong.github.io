@@ -14,7 +14,9 @@ tags: [machinelearning, deeplearning, studylog]
   
   각각의 인풋 x에는 타겟벡터 t는 하나씩만 있다.(손글씨 사진 하나는 하나의 숫자 레이블만을 가짐)
   
+  
   ### "머신러닝 알고리즘은 함수 y(x)로 나타낼 수 있다. 인풋 x가 들어오면 y벡터를 생성하는 함수로, y벡터는 타겟벡터와 같은 방식으로 인코딩된다. 이 함수의 구체적인 형태는 트레이닝 과정에서 결정된다."
+  
   
   - test set : 모델을 트레이닝 하는 단계에서 모델이 보지 못한 데이터로 모델의 성능을 판별하기 위해 learning phase 종료 후 사용.
   - generalization : training set의 데이터와 형태가 다른 unseen data도 잘 판별하도록 모델 일반화하는 것이 매우 중요.
@@ -69,7 +71,7 @@ plt.plot()
 ~~~
 위 코드를 통해 다음과 같은 그래프를 그릴 수 있습니다.
 
-![prml_101_0](../../../../../images/prml_101_1.png)
+![prml_101_0](../images/prml_101_1.png)
 
 
 
