@@ -3,6 +3,7 @@ layout: post
 title: 비숍 PRML 정리 Chapter 1.01 Introduction
 category: prml
 tags: [machinelearning, deeplearning, studylog]
+use_math: true
 ---
 
 ## Basic Terminology
@@ -39,15 +40,18 @@ tags: [machinelearning, deeplearning, studylog]
 ### Figure 1.2 예제 데이터 그래프 그리기
 
 앞으로 책에서 여러번 예시에 사용할 인위적인 데이터셋을 만든다. 
+교재에서는 데이터포인트를 10개만 사용했지만 15개를 사용해 그려보았다.
 
 input values {x} = uniformly generated numbers in range (0,1)
 
-corresponding target values {t} = corresponding values of sin(2*pi*x) 
+인풋 데이터 값 x로 0과 1 범위 사이의 임의의 실수를 15개 만든다.
 
+corresponding target values {t} = corresponding values of sin(2*pi*x) 
 with random noise with Gaussian distribution having 0.3 std variation
 
+타겟 값 t는 기본적으로 2*pi*x로 설정한다. 그러나 약간의 가우시안 분포(표준편차 0.3)에 따른 랜덤 노이즈를 더해줄 것이다. 
+
 교재에 나오는 그래프를 파이썬을 이용해 직접 그려보자.
-교재에서는 데이터포인트를 10개만 사용했지만 15개를 사용해 그려보았다.
 
 ~~~python
 import random
@@ -74,6 +78,11 @@ plt.plot()
 
 ![prml_101_1](../images/prml_101_1.png)
 
+많은 현실데이터가 우리가 알고자 하는 underlying regularity를 가지지만 개별 관측 데이터는 랜덤 노이즈로 오염된 이런 형태를 띈다.
 
+이런 노이즈는 랜덤 프로세스와 같은 stochastic한 특성으로부터 기인할 수도 있고 대부분은 관측되지 않은 값이나 다양한 소스에 의해 생긴다.
 
+우리의 목표는 이 트레이닝셋을 최대한 활용하여 
+
+This formula $f(x) = x^2$ is an example.
 * * *
