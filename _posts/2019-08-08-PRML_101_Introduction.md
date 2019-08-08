@@ -36,8 +36,9 @@ tags: [machinelearning, deeplearning, studylog]
 
 실수인 input variable x를 통해 실수인 target variable t를 예측하고자 한다. 
 
-### 예시 데이터셋 합성
-앞으로 여러번 예시에 사용할 인위적인 데이터셋을 만든다. 
+### Figure 1.2 예제 데이터 그래프 그리기
+
+앞으로 책에서 여러번 예시에 사용할 인위적인 데이터셋을 만든다. 
 
 input values {x} = uniformly generated numbers in range (0,1)
 
