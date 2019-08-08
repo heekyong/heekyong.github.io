@@ -24,7 +24,7 @@ tags: [machinelearning, deeplearning, studylog]
   - Classification Problem : 각각의 인풋벡터는 finite and discrete categories 중 하나에 소속.
   - Regression Problem : 아웃풋이 하나 또는 그 이상의 continous varialbe인  경우.
   
-  - Unspervised Learning : 타겟벡터 x. 비슷한 그룹을 찾는 clustering 문제나 인풋 스페이스 내 데이터의 분포를 결정하는 density estimation, 시각화를 위해 고차원 데이터으 차원 축소 등이 이에 해당한다.
+  - Unspervised Learning : 타겟벡터 x. 비슷한 그룹을 찾는 clustering 문제나 인풋 스페이스 내 데이터의 분포를 결정하는 density estimation, 시각화를 위해 고차원 데이터의 차원 축소 등이 이에 해당한다.
   
   - Reinforcement Learning : 주어지 상황에서의 리워드를 최대화하기 위해 suitable actions 선택하는 문제. trial and error로 학습. states and actions 시퀀스가 존재하고 서로  상호작용한다. 대부분의 경우 현재 액션은 당장의 리워드 외에도 후행하는 모든 스텝의 리워드에 영향을 미친다.
   
@@ -32,6 +32,44 @@ tags: [machinelearning, deeplearning, studylog]
 
 ## Polynomial Curve Fitting
 
+실수인 input variable x를 통해 실수인 target variable t를 예측하고자 한다. 
+
+### 예시 데이터셋 합성
+앞으로 여러번 예시에 사용할 인위적인 데이터셋을 만든다. 
+
+input values {x} = uniformly generated numbers in range (0,1)
+
+corresponding target values {t} = corresponding values of sin(2*pi*x) 
+
+with random noise with Gaussian distribution having 0.3 std variation
+
+교재에 나오는 그래프를 파이썬을 이용해 직접 그려보자.
+교재에서는 데이터포인트를 10개만 사용했지만 15개를 사용해 그려보았다.
+
+~~~python
+import random
+import numpy as np
+import matplotlib.pyplot as plt
+
+## Generate data x and t
+x = [random.random() for x in range(0,15)]
+t = [math.sin(item*2*np.pi) for item in x]
+
+## Generate and add noise to the data
+noise = np.random.normal(0,0.3,15)
+type(noise)
+t = t+noise
+
+x_sin=np.arange(0,1,0.01)
+y_sin=np.sin(x_sin*2*np.pi)
+
+plt.scatter(x,t, color='b')
+plt.plot(x_sin,y_sin,color='black')
+plt.plot()
+~~~
+위 코드를 통해 다음과 같은 그래프를 그릴 수 있습니다.
+
+![prml_101_0](../../../../../images/prml_101_1.png)
 
 
 
