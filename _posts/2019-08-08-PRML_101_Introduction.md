@@ -49,7 +49,7 @@ input values {x} = uniformly generated numbers in range (0,1)
 corresponding target values {t} = corresponding values of sin(2*pi*x) 
 with random noise with Gaussian distribution having 0.3 std variation
 
-타겟 값 t는 기본적으로 $2*\pi*x$로 설정한다. 그러나 약간의 가우시안 분포(표준편차 0.3)에 따른 랜덤 노이즈를 더해줄 것이다. 
+타겟 값 t는 기본적으로 $2\pix$로 설정한다. 그러나 약간의 가우시안 분포(표준편차 0.3)에 따른 랜덤 노이즈를 더해줄 것이다. 
 
 교재에 나오는 그래프를 파이썬을 이용해 직접 그려보자.
 
