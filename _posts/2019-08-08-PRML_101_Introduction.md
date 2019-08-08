@@ -16,7 +16,7 @@ use_math: true
   각각의 인풋 x에는 타겟벡터 t는 하나씩만 있다.(손글씨 사진 하나는 하나의 숫자 레이블만을 가짐)
   
   
-  ## "머신러닝 알고리즘은 함수 y(x)로 나타낼 수 있다. 인풋 x가 들어오면 y벡터를 생성하는 함수로, y벡터는 타겟벡터와 같은 방식으로 인코딩된다. 이 함수의 구체적인 형태는 트레이닝 과정에서 결정된다."
+  ### 머신러닝 알고리즘은 함수 y(x)로 나타낼 수 있다. 인풋 x가 들어오면 y벡터를 생성하는 함수로, y벡터는 타겟벡터와 같은 방식으로 인코딩된다. 이 함수의 구체적인 형태는 트레이닝 과정에서 결정된다.
   
   
   - test set : 모델을 트레이닝 하는 단계에서 모델이 보지 못한 데이터로 모델의 성능을 판별하기 위해 learning phase 종료 후 사용.
@@ -49,7 +49,7 @@ input values {x} = uniformly generated numbers in range (0,1)
 corresponding target values {t} = corresponding values of sin(2*pi*x) 
 with random noise with Gaussian distribution having 0.3 std variation
 
-타겟 값 t는 기본적으로 $2*pi*x$로 설정한다. 그러나 약간의 가우시안 분포(표준편차 0.3)에 따른 랜덤 노이즈를 더해줄 것이다. 
+타겟 값 t는 기본적으로 $ 2 * pi * x $로 설정한다. 그러나 약간의 가우시안 분포(표준편차 0.3)에 따른 랜덤 노이즈를 더해줄 것이다. 
 
 교재에 나오는 그래프를 파이썬을 이용해 직접 그려보자.
 
