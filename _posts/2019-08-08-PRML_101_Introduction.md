@@ -5,3 +5,25 @@ category: prml
 tags: [machinelearning, deeplearning, studylog]
 ---
 
+## Basic Terminology
+
+  hand written digit code example.
+  손글씨로 쓴 숫자를 정확하게 인식하는 테스크를 룰베이스로 풀려는 것보다 모델이 스스로 패턴을 찾게하여 머신러닝으로 푸는 것이 나음.
+  - training set : 카테고리 레이블링 된 인풋 데이터 셋. Used for tuning the parameters of an adaptive model. 
+  - target vector t : 분류하고자하는 카테고리를 나타내는 벡터. 이 예시에서는 해당하는 corresponding digit 숫자를 나타내는 벡터들.
+  
+  각각의 인풋 x에는 타겟벡터 t는 하나씩만 있다.(손글씨 사진 하나는 하나의 숫자 레이블만을 가짐)
+  
+  "머신러닝 알고리즘은 함수 y(x)로 나타낼 수 있다. 인풋 x가 들어오면 y벡터를 생성하는 함수로, y벡터는 타겟벡터와 같은 방식으로 인코딩된다.
+  이 함수의 구체적인 형태는 트레이닝 과정에서 결정된다."
+  
+  - test set : 모델을 트레이닝 하는 단계에서 모델이 보지 못한 데이터로 모델의 성능을 판별하기 위해 learning phase 종료 후 사용.
+  - generalization : training set의 데이터와 형태가 다른 unseen data도 잘 판별하도록 모델 일반화하는 것이 매우 중요.
+  - pre-processing/feature extraction : 효율적인 트레이닝을 위해 특정한 형태로 인풋데이터를 가공한다. 
+  테스트 데이터와 트레이닝 데이터는 반드시 같은 방식으로 프로세싱해야한다.
+  
+  
+* * *
+
+.
+* * *
