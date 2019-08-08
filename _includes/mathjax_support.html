@@ -21,8 +21,3 @@ MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
-_layouts/default.html 파일의 <head> 부분에 아래 내용 삽입
-
-{% if page.use_math %}
-  {% include mathjax_support.html %}
-{% endif %}
