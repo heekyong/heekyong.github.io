@@ -9,7 +9,10 @@ email: heekyong.go@gmail.com
 highlighter: rouge
 markdown: kramdown
 ### exclude the instructions / write-up in the README.md
-
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 # Tracker
 analytics: UA-83979019-1
