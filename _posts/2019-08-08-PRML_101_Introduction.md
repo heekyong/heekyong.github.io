@@ -72,7 +72,7 @@ plt.plot()
 ~~~
 위 코드를 통해 다음과 같은 그래프를 그릴 수 있습니다.
 
-![prml_101_1](../images/prml_101_1.png){: width="300" height="200"}
+![prml_101_1](../images/prml_101_1.png)
 
 
 
