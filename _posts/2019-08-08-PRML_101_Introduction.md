@@ -65,9 +65,9 @@ noise = np.random.normal(0,0.3,15)
 type(noise)
 t = t+noise
 
+## Plot a sine graph and datapoints scatter
 x_sin=np.arange(0,1,0.01)
 y_sin=np.sin(x_sin*2*np.pi)
-
 plt.scatter(x,t, color='b')
 plt.plot(x_sin,y_sin,color='black')
 plt.plot()
