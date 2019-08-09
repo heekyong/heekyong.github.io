@@ -74,7 +74,7 @@ plt.plot()
 ~~~
 위 코드를 통해 다음과 같은 그래프를 그릴 수 있다.
 
-![prml_101_1](/images/prml_101_1.png)
+![prml_101_1](./images/prml_101_1.png)
 
 많은 현실데이터가 우리가 알고자 하는 underlying regularity를 가지지만 개별 관측 데이터는 랜덤 노이즈로 오염된 이런 형태를 띈다.
 
